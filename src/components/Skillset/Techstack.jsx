@@ -5,14 +5,14 @@ import {
   DiReact,
   DiNodejs,
   DiGit,
+  DiBootstrap,
 } from "react-icons/di";
 import {
   SiCss3,
   SiSass,
-  SiSolidity,
   SiRedux,
-  SiMongodb,
-  SiHtml5
+  SiHtml5,
+  SiStyledcomponents,
 } from "react-icons/si";
 
 const Techstack = () => {
@@ -25,22 +25,13 @@ const Techstack = () => {
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiSass />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiCss3 />
@@ -48,8 +39,17 @@ const Techstack = () => {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiBootstrap />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiStyledcomponents />
+      </Col>
     </Row>
   );
-}
+};
 
 export default Techstack;

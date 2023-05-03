@@ -2,10 +2,10 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
+  SiPycharm,
   SiRender,
   SiVercel,
-  SiNetlify
+  SiNetlify,
 } from "react-icons/si";
 
 const Toolstack = () => {
@@ -15,7 +15,7 @@ const Toolstack = () => {
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiPycharm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
@@ -28,6 +28,6 @@ const Toolstack = () => {
       </Col>
     </Row>
   );
-}
+};
 
 export default Toolstack;

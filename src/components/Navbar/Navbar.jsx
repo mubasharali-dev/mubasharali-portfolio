@@ -2,19 +2,15 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../../assets/sLogo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineContacts
+  AiOutlineContacts,
+  AiFillGithub,
 } from "react-icons/ai";
-import { GiSkills } from "react-icons/gi"
-import { CgFileDocument } from "react-icons/cg";
-
+import { GiSkills } from "react-icons/gi";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -39,7 +35,10 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <p style={{ marginTop: ".5em", fontFamily: "Segoe Script" }}>
+            {" "}
+            {"<Mubashar Ali />"}{" "}
+          </p>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -81,37 +80,27 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact Me
+                <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
-            { <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/Avanishsri31/React-Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> }
+            {
+              <Nav.Item className="fork-btn">
+                <Button
+                  href="https://github.com/mubasharali-dev"
+                  target="_blank"
+                  className="fork-btn-inner"
+                >
+                  <AiFillGithub style={{ fontSize: "1.2em" }} />{" "}
+                </Button>
+              </Nav.Item>
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>
