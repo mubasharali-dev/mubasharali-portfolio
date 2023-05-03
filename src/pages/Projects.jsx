@@ -2,15 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import drumkit from "../assets/projects/drumkit.png";
 import cartsymedicine from "../assets/projects/cartsymedicine.JPG";
 import movieapp from "../assets/projects/movieapp.JPG";
 import fyp from "../assets/projects/fyp.png";
-import stackoverflow from "../assets/projects/stackoverflow.jpg";
-import speech from "../assets/projects/speech.png";
-import dicegame from "../assets/projects/dicegame.jpg";
-import residencia from "../assets/projects/Residencia.png";
-import simon from "../assets/projects/simon.png";
 
 const Projects = () => {
   return (
