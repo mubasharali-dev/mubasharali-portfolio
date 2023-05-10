@@ -35,7 +35,7 @@ const Home = () => {
                 <div>
                   <div className="text-center">
                     <img
-                      className="img-fluid d-block mx-auto pic1-image"
+                      className="img-fluid d-block mx-auto pic1-image responsive-img"
                       src={pic1}
                       alt=""
                     />
